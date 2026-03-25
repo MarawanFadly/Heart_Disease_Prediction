@@ -5,7 +5,7 @@ import streamlit as st      # streamlit run app/app.py
 import joblib 
 import pickle
 
-model= joblib.load('../App/Artifacts/svm_pipeline.pkl')
+#model= joblib.load('../App/Artifacts/svm_pipeline.pkl')
 
 #### Setting a background color to a streamlit page
 
