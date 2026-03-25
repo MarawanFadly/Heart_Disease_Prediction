@@ -19,7 +19,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown( '<h1 style ="font-size:50px;color:white;background-color:black;text-align:center;font-family:times new roman;" >Parkinson disease prediction</h1>', unsafe_allow_html=True )
+st.markdown( '<h1 style ="font-size:50px;color:white;background-color:black;text-align:center;font-family:times new roman;" >Heart Disease prediction</h1>', unsafe_allow_html=True )
 
 df=pd.read_csv('../data/raw/Heart-Disease-Patients-Records.csv')
 
@@ -89,7 +89,7 @@ diagnosis=box_42.selectbox( 'diagnosis',
 # Initialize session state
 if "data" not in st.session_state:
     st.session_state.data = pd.DataFrame(columns=[
-        'gender', 'sex', 'cholesterol level', 'chest pain type',
+        'age', 'sex', 'cholesterol level', 'chest pain type',
         'resisting blood pressure', 'fasting_blood_sugar', 'rest_ecg',
         'max heart rate achieved', 'exercise induced angina', 'st depression', 'st slope','num major vessels'
     ])
