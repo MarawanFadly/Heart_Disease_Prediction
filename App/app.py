@@ -19,7 +19,7 @@ st.markdown("""
 
 st.markdown( '<h1 style ="font-size:50px;color:white;background-color:black;text-align:center;font-family:times new roman;" >Heart Disease prediction</h1>', unsafe_allow_html=True )
 
-df=pd.read_csv('../data/raw/Heart-Disease-Patients-Records.csv')
+df=pd.read_csv('./data/raw/Heart-Disease-Patients-Records.csv')
 
 box_11, box_12, box_13, box_14 =   st.columns( 4 )
 
