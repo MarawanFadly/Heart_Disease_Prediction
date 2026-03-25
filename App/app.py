@@ -88,7 +88,7 @@ diagnosis=box_42.selectbox( 'diagnosis',
 if "data" not in st.session_state:
     st.session_state.data = pd.DataFrame(columns=[
         'age', 'sex', 'cholesterol level', 'chest pain type',
-        'resisting blood pressure', 'fasting_blood_sugar', 'rest_ecg',
+        'resisting blood pressure', 'fasting_blood_sugar', 'rest ecg',
         'max heart rate achieved', 'exercise induced angina', 'st depression', 'st slope','num major vessels'
     ])
 
@@ -99,7 +99,7 @@ input_data = pd.DataFrame([{
     'cholesterol level': cholesterol_level,
     'chest pain type': chest_pain_type,
     'resisting blood pressure': resisting_blood_pressure,
-    'fasting blood sugar': fasting_blood_sugar,
+    'fasting_blood_sugar': fasting_blood_sugar,
     'rest ecg': rest_ecg,
     'max heart rate achieved': max_heart_rate_achieved,
     'exercise induced angina': exercise_induced_angina,
