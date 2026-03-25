@@ -7,8 +7,6 @@ import pickle
 
 model= joblib.load('../App/Artifacts/svm_pipeline.pkl')
 
-st.set_page_config( 'Exam Score Prediction', ':book:', 'wide' )
-
 #### Setting a background color to a streamlit page
 
 st.markdown("""
