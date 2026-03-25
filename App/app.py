@@ -5,7 +5,7 @@ import streamlit as st      # streamlit run app/app.py
 import joblib 
 import pickle
 
-model= joblib.load("../App/Artifacts/svm_pipeline.pkl")
+model= joblib.load('../App/Artifacts/svm_pipeline.pkl')
 
 st.set_page_config( 'Exam Score Prediction', ':book:', 'wide' )
 
@@ -72,9 +72,9 @@ st_depression= box_32.selectbox( 'st_depression',
 st_slope=box_33.selectbox( 'st_slope',
           options = df['st_slope'].unique())
 
-num_major_vessels= box_34.slider( 'max_heart_rate_achieved',
-          min_value= df['max_heart_rate_achieved'].min(),
-          max_value= df['max_heart_rate_achieved'].max(),key='number_of_vessels')
+num_major_vessels= box_34.slider( 'num_major_vessels',
+          min_value= df['num_major_vessels'].min(),
+          max_value= df['num_major_vessels'].max(),key='number_of_vessels')
 
 # Row 4
 
